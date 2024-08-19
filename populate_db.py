@@ -46,14 +46,14 @@ def generate_post_for_group(group_name):
 
         # Generating comments for the post
         for _ in range(random.randint(3, 15)):  # 3 to 15 comments per post
-            generate_comment_for_post(post.id)
+            generate_comment_for_post(post.id, post_text)
 
     except Exception as e:
         print(f"Error generating post for {group_name}: {e}")
 
-def generate_comment_for_post(post_id):
+def generate_comment_for_post(post_id, post_text):
     try:
-        prompt = "Generate a comment for the post."
+        prompt = f"The following is a post:\n{post_text}\n\nGenerate a relevant comment in response to this post."
         completion = client.chat.completions.create(
             model="model-identifier",  # Replace with your model identifier
             messages=[
