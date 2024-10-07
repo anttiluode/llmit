@@ -2,12 +2,6 @@
 
 # LLMit
 
-## Demo Video
-
-## Demo Video
-
-[![LLMit Demo Video](https://img.youtube.com/vi/PJ7PV-NSrOU/0.jpg)](https://www.youtube.com/watch?v=PJ7PV-NSrOU)
-
 LLMit is a Reddit-like web application that dynamically generates and displays posts and comments using a locally hosted AI model.
 
 ## Features
